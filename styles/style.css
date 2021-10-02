@@ -12,15 +12,18 @@ h1 {
     border-left: 8px double black;
     border-top: 3px dotted black;
     border-bottom: 10px solid black;
+    border-radius: 10px;
     text-shadow: 3px 3px 1px yellow;
 }
 
 .wrapper {
+    width: 600px;
     margin: 0 auto;
     padding: 0 20px 20px 20px;
     border: 5px solid rgb(164, 230, 89);
-    width: 600px;
+    border-radius: 30px;
     background-color: rgb(255, 254, 167);
+    opacity: 0.95;
 }
 
 .tableofcont {
@@ -36,6 +39,7 @@ h1 {
 body {
     background-image: url("../images/seed.jpg");
     background-repeat: repeat;
+    background-attachment: fixed;
 }
 
 p {
@@ -47,7 +51,34 @@ img {
     height: auto;
 }
 
-#navigation {
-    font-size: 20px;
+.navbox {
+    display: flex;
+    padding: 20px;
+}
+
+.horizontal {
+    font-size: 25px;
     color:crimson;
+    inline-size: 485px;
+    border: 10px solid blue;
+    background-color: rgb(255, 218, 149);
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    padding: 4%;
+}
+
+h2 {
+    writing-mode: vertical-lr;
+    color: white;
+    background-color: blue;
+    margin: 0px 10px auto auto;
+    block-size: 100px;
+}
+
+.tocrow {
+    display: flex;
+}
+
+iframe {
+    padding-left: 10px;
 }
